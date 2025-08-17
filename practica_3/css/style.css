@@ -1,0 +1,20 @@
+body{
+    color: teal;
+}
+
+
+.red, .orange {
+    color: red;
+}
+
+.orange{
+    color: orange;
+}
+
+.yellow{
+    color: yellow;
+}
+
+.fuchsia{
+    color: fuchsia;
+}
