@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+  vertical-align: baseline;
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+
+P {
+  background: bisque;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+img {
+  width: 300px;
+  border: 1px solid black;
+  padding: 10px;
+  clear: both;
+}
+b {
+  font-size: 22px;
+  font-style: bold;
+}
+
+img:nth-of-type(even) {
+  float: right;
+}
+
+img:nth-of-type(odd) {
+  float: left;
+}
+
+.fon {
+  width: 500px;
+  height: 500px;
+  padding: 100px;
+  border: 20px dashed black;
+  margin: 50px auto;
+  background: url(../images/zakat.jpg) center/200px auto no-repeat border-box,
+    url(../images/fon.png) left top/auto repeat padding-box, silver border-box;
+  /* background-color: silver;
+  background-image: url(../images/fon.png);
+  background-origin:padding-box;
+  background-repeat: no-repeat; */
+  /* background-image: url(../images/fon.png);
+  background-origin:border-box;
+  background-color: silver; */
+  /* 
+   background: linear-gradient (silver, silver) padding-box,
+   url(../images/fon.png)  content-box;
+    background-size: auto; */
+  /* background-color: silver;
+    background-origin: border-box; */
+  /* background-image: url(../images/fon.png);
+    background-size: auto;
+    background-clip: padding-box;
+    background-origin: padding-box; 
+}
+.fon{
+    background-color: silver;
+    background-origin: border-box ; */
+}
+
+h1 {
+  background-image: url(../images/sprait.png);
+  background-position-y: -20px;
+  background-repeat: no-repeat;
+  margin: 20px auto;
+  padding-left: 20px;
+  width: 282px;
+  background-color: bisque;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1:hover {
+  background-position-y: -47px;
+}
