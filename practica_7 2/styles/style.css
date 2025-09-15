@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  background-color: #edeef0;
+}
+.container-header {
+  background: #4a76a8;
+}
+
+.header {
+  display: flex;
+  padding: 13px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  cursor: pointer;
+}
+
+.search {
+  display: flex;
+  border-radius: 20px;
+  background: #1e3c5f;
+  padding: 9px;
+  height: 37px;
+}
+
+.logo {
+  width: 52px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.ava {
+  width: 40px;
+  border-radius: 50px;
+  height: 40px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  margin-left: 120px;
+  width: 407px;
+  justify-content: space-evenly;
+}
+
+.search img {
+  margin-right: 14px;
+  cursor: pointer;
+}
+
+.sr_txt {
+  display: block;
+  background: #1e3c5f;
+  color: white;
+}
+
+.col {
+  width: 30px;
+}
+
+.prof {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.prof p {
+  color: white;
+  margin-right: 10px;
+}
+
+.spisok {
+  margin-left: 10px;
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 15px;
+  display: flex;
+}
+
+.container-nav {
+  max-width: 180px;
+}
+
+.items li {
+  list-style: none;
+}
+
+.items i {
+  color: #99b1c6;
+}
+
+a {
+  text-decoration: none;
+  color: #2e5473;
+}
+
+.size {
+  width: 29px;
+  width: 15px;
+  padding: 7px 25px 10px 0px;
+}
+
+.line {
+  border-bottom: 1px solid #bccfdf;
+  width: 130px;
+}
+
+.guests {
+  display: flex;
+  align-items: center;
+}
+
+.guests p {
+  margin-left: auto;
+  background: #bccfdf;
+  padding: 3px;
+  color: #2e5473;
+}
+
+.add img {
+  width: 180px;
+}
+
+.container-chat {
+  max-width: 690px;
+  padding-left: 22px;
+}
+
+.position {
+  margin: 0 8px;
+}
+
+.chat-header {
+  display: flex;
+  width: 690px;
+  justify-content: space-between;
+}
+
+.back {
+  display: flex;
+  align-items: center;
+}
+
+.back p{
+    margin: 5px;
+}
+
+.parametrs{
+    display: flex;
+    align-items: center;
+}
+
+.footer-chat{
+    display: flex;
+  width: 690px;
+  justify-content: space-between;
+}
