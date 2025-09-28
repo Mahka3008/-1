@@ -13,7 +13,14 @@
 }
 body {
   background-color: #edeef0;
+  font-family: roboto, Helvetica, sans-serif;
+  font-size: 13px;
 }
+
+i {
+  cursor: pointer;
+}
+
 .container-header {
   background: #4a76a8;
 }
@@ -24,7 +31,6 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
-
 img {
   cursor: pointer;
 }
@@ -66,6 +72,7 @@ img {
   display: block;
   background: #1e3c5f;
   color: white;
+  outline: none;
 }
 
 .col {
@@ -89,18 +96,29 @@ img {
 }
 
 .container {
-  max-width: 1200px;
   margin: 0 auto;
   padding-top: 15px;
   display: flex;
+  justify-content: center;
+  width: 1200px;
+  justify-content: space-evenly;
 }
 
 .container-nav {
-  max-width: 180px;
+  width: 17%;
+}
+
+.navig {
+  width: max-content;
 }
 
 .items li {
   list-style: none;
+}
+
+.items li:hover {
+  background-color: #99b1c688;
+  border-radius: 3px;
 }
 
 .items i {
@@ -116,16 +134,19 @@ a {
   width: 29px;
   width: 15px;
   padding: 7px 25px 10px 0px;
+  overflow: visible;
 }
 
 .line {
   border-bottom: 1px solid #bccfdf;
-  width: 130px;
+  width: 150px;
+  margin-left: 15px;
 }
 
 .guests {
   display: flex;
   align-items: center;
+  width: 180px;
 }
 
 .guests p {
@@ -135,74 +156,191 @@ a {
   color: #2e5473;
 }
 
+.add {
+  margin-top: 35px;
+}
+
 .add img {
   width: 180px;
 }
 
 .container-chat {
-  max-width: 690px;
-  padding-left: 22px;
+  width: 60%;
+  background-color: #fff;
+  border-radius: 5px;
 }
 
 .position {
   margin: 0 8px;
+  font-size: 15px;
+  color: #ccc;
 }
 
 .chat-header {
   display: flex;
-  width: 690px;
   justify-content: space-between;
-  padding: 17px 0;
   border-bottom: 2px solid #e4e6e9;
+  padding: 5px;
+  align-items: center;
 }
 
-.number{
-  color:#bccfdf;
+.number {
+  color: #bccfdf;
   text-align: center;
 }
 
 .back {
   display: flex;
   align-items: center;
+  color: #ccc;
 }
 
-.back p{
-    margin: 5px;
+.back i {
+  font-size: 15px;
 }
 
-.parametrs{
-    display: flex;
-    align-items: center;
+.back p {
+  margin: 5px;
 }
 
-.footer-chat{
-    display: flex;
-    width: 690px;
-    justify-content: space-between;
-    padding: 18px 0;
-    border-top: 2px solid #e4e6e9;
-    align-items: center;
+.parametrs {
+  display: flex;
+  align-items: center;
 }
 
-textarea{
-  width: 600px;
+.footer-chat {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  border-top: 2px solid #e4e6e9;
+  align-items: center;
+  background-color: #fafbfc;
 }
 
-.chat-body{
-  max-height: 35%;
+textarea {
+  width: 500px;
+  height: 50px;
+  resize: none;
+  padding: 10px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+  outline: none;
 }
-.he img{
-    width: 40px;
+
+.func-footer-chat {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+}
+
+.icon-footer {
+  font-size: 20px;
+  color: #ccc;
+}
+
+.size-footer {
+  font-size: 20px;
+  color: #ccc;
+  padding: 0px 10px;
+}
+
+.chat-body {
+  height: 530px;
+  padding-left: 100px;
+}
+
+.mass {
+  margin-left: 50px;
+  border-left: 2px solid #99b1c6;
+  padding: 10px;
+}
+
+.he img,
+h1 {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.he h1 {
+  padding-left: 5px;
+  color: #5a75a1;
+  font-weight: bold;
+}
+
+.he p {
+  padding-top: 10px;
+}
+
+.he img {
+  width: 40px;
   border-radius: 50px;
   height: 40px;
 }
-.chat-body{
-    overflow: auto;
+.chat-body {
+  overflow: auto;
 }
 
-.container-member{
-  padding-left: 40px;
+.container-member {
+  width: 21%;
+  background-color: white;
+  margin-left: 20px;
+  height: 175px;
+  border-radius: 3px;
 }
-.main-member{
-  
+
+.main-member p {
+  padding: 10px 10px;
+  color: #2e5473;
+  cursor: pointer;
+}
+
+.main-member p:last-child {
+  color: black;
+}
+
+.main-member p:hover {
+  background-color: #f0f2f5d6;
+}
+
+.line-member {
+  width: 200px;
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+.items-mes {
+  font-weight: bold;
+  background-color: #f0f2f5;
+  margin-top: 15px;
+  border-left: 2px solid #5181b8;
+}
+
+
+
+.relativ-block img {
+  width: 40px;
+  border-radius: 50px;
+  height: 47px;
+  padding-top: 10px;
+}
+
+.relativ-block {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  bottom: 0;
+  right: 0;
+  margin-right: 20px;
+  background-color: #dae1e8;
+  align-items: center;
+  width: 3%;
+}
+
+.relativ-block p i {
+  margin-left: 3px;
+}
+.relativ-block p {
+  color: #99b1c6;
+  padding: 5px;
 }
