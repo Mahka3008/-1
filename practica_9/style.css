@@ -1,0 +1,44 @@
+.inventory {
+  font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+  width: 100%;
+  margin-top: 25px;
+  border-spacing: 0;
+}
+
+caption {
+  text-align: right;
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+}
+
+th,
+td {
+  font-size: 1.1em;
+  border: 1px solid #ddb575;
+  padding: 3px 7px 2px 7px;
+}
+
+th{
+  text-align: left;
+  padding-top: 5px;
+  padding-bottom: 4px;
+  background: linear-gradient(rgb(229,76,16), rgb(173,54,8));
+  color: white;
+}
+
+tr:nth-child(odd){
+  background-color: rgba(229,76,16,.1);
+}
+
+#col{
+  width: 15%;
+}
+
+table{
+  position: relative;
+}
+
+.thead{
+  position: sticky;
+  top: 0;
+}
