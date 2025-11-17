@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Анкета начинающего программиста</h1>
+      <form action="http://cdbnd.ru/primeri_dly_urokov/forma_prog.php" method="POST">
+
+        <div class="form-block">
+          <div class="block-title">Анкетные данные</div>
+          <div class="form-group">
+            <label for="fio">Ваше ФИО:</label>
+            <input type="text" id="fio" name="fio" placeholder="ФИО без сокращений" autofocus required />
+          </div>
+
+          <div class="form-group">
+            <label for="birthdate">Дата вашего рождения:</label>
+            <input type="date" id="birthdate" name="birthdate" required />
+          </div>
+          <div class="sub-section">
+            <div class="sub-section-title">Ваш пол</div>
+            <div class="radio-group">
+              <label class="radio-item">
+                <input type="radio" name="gender" value="man" required />
+                <span class="radio-custom"></span>
+                мужской
+              </label>
+              <label class="radio-item">
+                <input type="radio" name="gender" value="women" />
+                <span class="radio-custom"></span>
+                женский
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="school">Выберите школу в которой вы учитесь:</label>
+            <select id="school" name="school" required>
+              <option value="">Выберите школу</option>
+              <option value="1">Школа №20</option>
+              <option value="2">Школа №21</option>
+              <option value="3">Школа №22</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="class">Укажите ваш класс обучения:</label>
+            <input type="number" id="class" name="class" min="1" max="11" required />
+          </div>
+        </div>
+
+        <div class="form-block">
+          <div class="block-title">Изучаемые дисциплины</div>
+          <div class="sub-section">
+            <div class="sub-section-title">Блоки обучения</div>
+            <div class="radio-group">
+              <label class="radio-item">
+                <input type="radio" name="learning_block" value="layout" required />
+                <span class="radio-custom"></span>
+                вёрстка сайтов
+              </label>
+              <label class="radio-item">
+                <input type="radio" name="learning_block" value="frontend" checked />
+                <span class="radio-custom"></span>
+                frontend-программирование
+              </label>
+              <label class="radio-item">
+                <input type="radio" name="learning_block" value="backend" />
+                <span class="radio-custom"></span>
+                backend-программирование
+              </label>
+            </div>
+          </div>
+
+          <div class="sub-section">
+            <div class="sub-section-title">Технологии содержащиеся в изучаемом блоке</div>
+            <div class="checkbox-group">
+              <label class="checkbox-item">
+                <input type="checkbox" name="technologies[]" value="html" />
+                <span class="checkbox-custom"></span>
+                HTML
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" name="technologies[]" value="css" />
+                <span class="checkbox-custom"></span>
+                CSS
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" name="technologies[]" value="javascript" />
+                <span class="checkbox-custom"></span>
+                JavaScript
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" name="technologies[]" value="dom" />
+                <span class="checkbox-custom"></span>
+                DOM
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" name="technologies[]" value="bom" />
+                <span class="checkbox-custom"></span>
+                BOM
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" name="technologies[]" value="php" />
+                <span class="checkbox-custom"></span>
+                PHP
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" name="technologies[]" value="mysql" />
+                <span class="checkbox-custom"></span>
+                MySQL
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" name="technologies[]" value="ajax" />
+                <span class="checkbox-custom"></span>
+                AJAX
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-block">
+          <div class="block-title">Комментарии</div>
+          <div class="form-group">
+            <label for="comments">Ваши комментарии:</label>
+            <textarea
+              id="comments"
+              name="comments"
+              rows="4"
+              placeholder="Введите ваш комментарий"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="buttons-container">
+          <button type="submit" class="btn">отправить данные</button>
+          <button type="reset" class="btn">очистить форму</button>
+          <button type="button" class="btn">очень важная кнопка</button>
+        </div>
+
+        <div class="hidden-text">эта кнопка ничего не делает</div>
+      </form>
+    </div>
+  </body>
+</html>
