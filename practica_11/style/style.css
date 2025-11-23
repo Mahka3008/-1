@@ -1,0 +1,72 @@
+body {
+  background: thistle;
+  padding-top: 70px;
+  position: relative;
+}
+header {
+  display: flex;
+  height: 70px;
+  background: darkcyan;
+  align-items: center;
+}
+p {
+  background: chocolate;
+  padding: 10px;
+  width: 130px;
+  text-align: center;
+  margin: 0 auto;
+}
+div {
+  width: 110px;
+  height: 110px;
+  color: darkgoldenrod;
+  background-color: darkgoldenrod;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 400px;
+  left: calc(50% - 50px);
+  animation: animka 5s linear forwards;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes animka {
+  from {
+    left: calc(50% - 50px);
+    border-radius: 0;
+    height: 110px;
+    width: 110px;
+    color: darkgoldenrod;
+  }
+
+  10% {
+    left: calc(50% - 50px);
+    border-radius: 50%;
+    height: 110px;
+    width: 110px;
+    color: darkgoldenrod;
+    transform: rotate(0deg);
+  }
+
+  95% {
+    border-radius: 50%;
+    left: calc(50% - 50px);
+    top: 80px;
+    height: 110px;
+    width: 110px;
+    color: darkgoldenrod;
+    transform: rotate(0deg);
+  }
+
+  100% {
+    top: 80px;
+    left: 42%;
+    border-radius: 0;
+    height: 50px;
+    width: 250px;
+    color: black;
+    transform: rotate(0deg);
+  }
+}
